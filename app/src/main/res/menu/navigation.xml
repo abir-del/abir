@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/imp"
+        android:title="Hotel" />
+
+    <item
+        android:id="@+id/des"
+        android:title="Maison d'hôte" />
+
+    <item
+        android:id="@+id/dev"
+        android:title="Resto" />
+
+    <item
+        android:id="@+id/eve"
+        android:title="café" />
+
+    <item
+    android:id="@+id/forma"
+    android:title="Location Voiture" />
+    <item
+        android:id="@+id/taxi"
+        android:title="Taxi" />
+
+</menu>

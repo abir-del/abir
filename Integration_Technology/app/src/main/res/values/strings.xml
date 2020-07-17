@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Integration Technology</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_services">Nos Services</string>
+    <string name="title_activity_login">Connexion</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="title_activity_connexion">Se connecter</string>
+    <string name="title_activity_contacte">Contactez Nous</string>
+    <string name="title_activity_propos">À propos</string>
+</resources>

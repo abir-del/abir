@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arriere1"
+    tools:context=".BlocNote">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="40sp"
+                android:layout_gravity="center"
+                android:textColor="#010000"
+                android:text=" Blocs de 50 feuilles" />
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/blocnote1" />
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/blocnote2" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#010000"
+                android:text="Logo" />
+            <ImageView
+                android:id="@+id/add_image"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:onClick="gallery"
+                android:layout_height="40dp"
+                app:srcCompat="@android:drawable/ic_input_add" />
+        </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:textColor="#010000"
+                    android:text="Couleur" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rouge"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rouge"
+                    android:textColor="#FF0007"
+                    app:buttonTint="#FF0007"/>
+
+                <RadioButton
+                    android:id="@+id/noir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Noir"
+                    android:textColor="#010100"
+                    app:buttonTint="#010100"/>
+
+                <RadioButton
+                    android:id="@+id/blanc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Blanc"
+                    android:textColor="#010100"
+                    app:buttonTint="#010100"/>
+
+                <RadioButton
+                    android:id="@+id/gris"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gris"
+                    android:textColor="#5D5D5D"
+                    app:buttonTint="#5D5D5D"/>
+
+                <RadioButton
+                    android:id="@+id/jaune"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Jaune"
+                    android:textColor="#FFE700"
+                    app:buttonTint="#FFE700"/>
+
+            </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textColor="#010000"
+                    android:text="Taille" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/a5"
+                        android:checked="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="A5" />
+
+                    <RadioButton
+                        android:id="@+id/a6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="A6" />
+
+                    <RadioButton
+                        android:id="@+id/a7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="A7" />
+                </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="#010000"
+                android:text="Description" />
+
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="60"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="4dp"
+                android:layout_marginTop="30dp"
+                app:cardUseCompatPadding="true"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Confirmation Du Commande"
+                        android:textColor="#010101"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/nom"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="Votre Nom" />
+                    <EditText
+                        android:id="@+id/prenom"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="Votre Prenom" />
+                    <EditText
+                        android:id="@+id/mail"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:hint="E-mail" />
+                    <EditText
+                        android:id="@+id/tel"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:maxLength="8"
+                        android:inputType="phone"
+                        android:hint="Numéro de Téléphone" />
+                    <EditText
+                        android:id="@+id/quantite"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:maxLength="2"
+                        android:inputType="phone"
+                        android:hint="Quantité" />
+                    <EditText
+                        android:id="@+id/cmnt"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:hint="Remarque" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:singleLine="true"
+                        android:layout_gravity="center"
+                        android:text="Ici la date de réception" />
+
+                    <Button
+                        android:id="@+id/env"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#010101"
+                        android:backgroundTint="#00A4E2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirmer" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

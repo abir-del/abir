@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.integration_technology">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.gm.permission.WRITE_GMAIL" />
+    <uses-permission android:name="com.google.android.gm.permission.AUTO_SEND" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Evenements"></activity>
+        <activity android:name=".Formations" />
+        <activity android:name=".Design" />
+        <activity android:name=".dev_App" />
+        <activity android:name=".dev_Web" />
+        <activity android:name=".dev_Mobile" />
+        <activity android:name=".developpment" />
+        <activity android:name=".CarteVisite" />
+        <activity android:name=".BlocNote" />
+        <activity android:name=".Textile" />
+        <activity android:name=".impression" />
+        <activity
+            android:name=".propos"
+            android:label="@string/title_activity_propos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".contacte"
+            android:label="@string/title_activity_contacte"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Connexion"
+            android:label="@string/title_activity_connexion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".services"
+            android:label="@string/title_activity_services"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

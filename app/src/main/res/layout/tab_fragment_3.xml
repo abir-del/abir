@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-50dp"
+        android:fillViewport="true"
+        android:isScrollContainer="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/application"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:elevation="90dp"
+                app:cardBackgroundColor="#848585"
+                card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="250dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+                    <ImageView
+                        android:id="@+id/application_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="18dp"
+                        android:src="@drawable/dev1" />
+
+                    <TextView
+                        android:id="@+id/application_title"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/application_image"
+                        android:paddingBottom="5dp"
+                        android:text="Développement Logiciel"
+                        android:textColor="#0053FF"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/application_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/application_image"
+                        android:text="Développez vos applications Bureautique"
+                        android:textColor="#010101" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:elevation="90dp"
+                card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="250dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+                    <ImageView
+                        android:id="@+id/mobile_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="18dp"
+                        android:src="@drawable/dev2" />
+
+                    <TextView
+                        android:id="@+id/mobile_title"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/mobile_image"
+                        android:paddingBottom="5dp"
+                        android:text="Développement Mobile"
+                        android:textColor="#0053FF"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/mobile_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/mobile_title"
+                        android:text="Développer votre Application Mobile \n maintenant "
+                        android:textColor="#010101" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/web"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="40dp"
+                android:elevation="90dp"
+                card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="259dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+                    <ImageView
+                        android:id="@+id/web_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="18dp"
+                        android:src="@drawable/dev4" />
+
+                    <TextView
+                        android:id="@+id/web_title"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/web_image"
+                        android:paddingBottom="5dp"
+                        android:text="Développement web"
+                        android:textColor="#0053FF"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/web_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/web_title"
+                        android:layout_toRightOf="@+id/web_image"
+                        android:text="Développer votre site web maintenant"
+                        android:textColor="#010101" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

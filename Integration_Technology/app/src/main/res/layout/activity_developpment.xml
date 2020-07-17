@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arriere7"
+    tools:context=".developpment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/dev1"
+            android:onClick="devMob"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/dev2"
+            android:onClick="devWeb"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/dev3"
+            android:onClick="devApp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1069308229980",
+    "firebase_url": "https://tournisroapplication.firebaseio.com",
+    "project_id": "tournisroapplication",
+    "storage_bucket": "tournisroapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069308229980:android:126d8513ab7497f505e999",
+        "android_client_info": {
+          "package_name": "com.example.integrationtechnology"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069308229980-dfm7t4e1ju70ho2egce9o8o7vmbp154t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.integrationtechnology",
+            "certificate_hash": "f58515fef10c282b767d59c19921c5e665c86a86"
+          }
+        },
+        {
+          "client_id": "1069308229980-3tsr4jetp8hf7h20ggtseog4aq7df1pu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoNJkPmJag-xFWersVc447H-5LR9T32cY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069308229980-3tsr4jetp8hf7h20ggtseog4aq7df1pu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

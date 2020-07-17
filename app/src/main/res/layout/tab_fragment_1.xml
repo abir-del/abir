@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabFragment1">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:fillViewport="true"
+        android:visibility="visible"
+        android:isScrollContainer="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/t_shirt"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:elevation="90dp"
+                card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="250dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+                    <ImageView
+                        android:id="@+id/t_shirt_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="18dp"
+                        android:src="@drawable/ex1" />
+
+                    <TextView
+                        android:id="@+id/application_title"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/application_image"
+                        android:paddingBottom="5dp"
+                        android:text="Textille"
+                        android:textColor="#0053FF"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/application_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/application_image"
+                        android:text="Bla bla bla !!!"
+                        android:textColor="#8b8b8b" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:elevation="90dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="250dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/mobile_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="18dp"
+                        android:src="@drawable/imp2" />
+
+                    <TextView
+                        android:id="@+id/mobile_title"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/mobile_image"
+                        android:paddingBottom="5dp"
+                        android:text="Numerique"
+                        android:textSize="24sp"
+                        android:textColor="#0053FF"/>
+
+                    <TextView
+                        android:id="@+id/mobile_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/mobile_title"
+                        android:layout_toRightOf="@+id/mobile_image"
+                        android:text="Bla bla bla !!! "
+                        android:textColor="#8b8b8b" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/web"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:elevation="90dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="250dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/web_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="18dp"
+                        android:src="@drawable/imp3" />
+
+                    <TextView
+                        android:id="@+id/web_title"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/web_image"
+                        android:paddingBottom="5dp"
+                        android:text="Papeterie"
+                        android:textSize="24sp"
+                        android:textColor="#0053FF"/>
+
+                    <TextView
+                        android:id="@+id/web_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/web_title"
+                        android:layout_toRightOf="@+id/web_image"
+                        android:text="Bla bla bla !!!"
+                        android:textColor="#8b8b8b" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/Sublimation"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_margin="5dp"
+                android:elevation="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="250dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/Sublimation_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="18dp"
+                        android:src="@drawable/imp4" />
+
+                    <TextView
+                        android:id="@+id/Sublimation_title"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/web_image"
+                        android:paddingBottom="5dp"
+                        android:text="Sublimation"
+                        android:textSize="24sp"
+                        android:textColor="#0053FF"/>
+
+                    <TextView
+                        android:id="@+id/Sublimation_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/Sublimation_title"
+                        android:layout_toRightOf="@+id/Sublimation_image"
+                        android:text="Bla bla bla !!!"
+                        android:textColor="#8b8b8b" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/carton"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_margin="5dp"
+                android:elevation="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="250dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/carton_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="18dp"
+                        android:src="@drawable/imp4" />
+
+                    <TextView
+                        android:id="@+id/carton_title"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/web_image"
+                        android:paddingBottom="5dp"
+                        android:text="Carton"
+                        android:textSize="24sp"
+                        android:textColor="#0053FF"/>
+
+                    <TextView
+                        android:id="@+id/carton_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/web_title"
+                        android:layout_toRightOf="@+id/web_image"
+                        android:text="Bla bla bla !!!"
+                        android:textColor="#8b8b8b" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gravure_laser"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_margin="5dp"
+                android:elevation="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="250dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/Gravure_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="18dp"
+                        android:src="@drawable/imp4" />
+
+                    <TextView
+                        android:id="@+id/Gravure_title"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/web_image"
+                        android:paddingBottom="5dp"
+                        android:text="Gravure Laser"
+                        android:textSize="24sp"
+                        android:textColor="#0053FF"/>
+
+                    <TextView
+                        android:id="@+id/Gravure_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/web_title"
+                        android:layout_toRightOf="@+id/web_image"
+                        android:text="Bla bla bla !!!"
+                        android:textColor="#8b8b8b" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
